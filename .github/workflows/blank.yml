@@ -1,0 +1,13 @@
+name: unit-tests-check
+
+on:
+  pull_request:
+    paths-ignore:
+      - 'int-tests/**'
+
+jobs:
+  do-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo DONE
+      
